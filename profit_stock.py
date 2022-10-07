@@ -34,7 +34,7 @@ class Solution:
                 profit = prices[right] - prices[left]
                 maxProfit = max(profit, maxProfit)
             else:
-                left += 1
+                left = right
             right += 1
         return maxProfit
 
